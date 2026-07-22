@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافيه موقفنا حالنا - Coffee & Sweets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="شعار كافيه موقفنا حالنا">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">عن الكافيه</a></li>
+                    <li><a href="#menu">قائمة المشروبات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>وصلت عمفرق دارينا</h1>
+            <p>راح نمشي بطرق كتير .. الطرق كلا رح توصل لموقف واحد .. <br>
+                موقف دارينا .. قهوة .. بحر .. و كتير من الحب</p>
+            <a href="#menu" class="btn">اكتشف القائمة</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container section">
+        <h2 class="section-title">عن الكافيه وتاريخنا</h2>
+        <div class="about-flex">
+            <div class="about-text">
+                <p>تأسس كافيه <strong>عمفرق دارينا</strong> كسيارة زهرية متنقلة على كورنيش مدينة طرطوس البحري، والتي حصدت شهرة واسعة واجتاحت منصات التواصل الاجتماعي كأول تجربة من نوعها في سوريا. </p>
+                <p>وبفضل الشغف والالتزام بالجودة، تطور المشروع بسرعة قياسية ليتحول من عربة صغيرة إلى علامة تجارية رائدة تمتلك سلسلة فروع ثابتة وموزعة بشكل استراتيجي في حارات وشوارع طرطوس الحيوية لخدمة زبائنها على مدار الساعة.<br> واليوم، يقدم الكافيه تجربة استثنائية لعشاق القهوة والحلويات من خلال منيو غني ومتجدد يجمع بين المشروبات المبتكرة والحلويات الغربية الفاخرة، ليصبح الوجهة الأولى ومحط ثقة لآلاف الزوار وفريق عمل شاب يقود مسيرة التميز والابتكار في عالم الضيافة وصناعة القهوة المحلية.</p>
+            </div>
+            <div class="about-image">
+                <img src="dd.jpg" alt="داخل الكافيه">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container section">
+        <h2 class="section-title">قائمة المشروبات</h2>
+        
+        <div class="menu-categories">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="coffee"> مشروبات باردة</button>
+            <button class="filter-btn" data-filter="cold"> قهوة </button>
+            <button class="filter-btn" data-filter="tea"> ميلك شيك </button>
+
+        </div>
+
+        <div class="menu-grid">
+            <!-- Item 1: Coffee -->
+            <div class="menu-item coffee" onclick="openModal('latte-modal')">
+                <img src="coffee.jpg" alt="لاتيه">
+                <h3>مهيتو</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+
+            <!-- Item 2: Smoothie -->
+            <div class="menu-item cold" onclick="openModal('smoothie-modal')">
+                <img src="smoothie.jpg" alt="سموذي فراولة">
+                <h3>قهوة</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item cold" onclick="openModal('smoothie-modal')">
+                <img src="smoothie.jpg" alt="سموذي فراولة">
+                <h3>قهوة</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item cold" onclick="openModal('smoothie-modal')">
+                <img src="smoothie.jpg" alt="سموذي فراولة">
+                <h3>قهوة</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item cold" onclick="openModal('smoothie-modal')">
+                <img src="smoothie.jpg" alt="سموذي فراولة">
+                <h3>قهوة</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+
+            <!-- Item 3: Tea -->
+            <div class="menu-item tea" onclick="openModal('tea-modal')">
+                <img src="tea.jpg" alt="شاي أعشاب">
+                <h3>ميلك شيك</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item tea" onclick="openModal('tea-modal')">
+                <img src="tea.jpg" alt="شاي أعشاب">
+                <h3>ميلك شيك</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item tea" onclick="openModal('tea-modal')">
+                <img src="tea.jpg" alt="شاي أعشاب">
+                <h3>ميلك شيك</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+            <div class="menu-item tea" onclick="openModal('tea-modal')">
+                <img src="tea.jpg" alt="شاي أعشاب">
+                <h3>ميلك شيك</h3>
+                <p>اضغط للمزيد من التفاصيل</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Info Section -->
+    <section id="contact" class="container section contact-info">
+        <h2 class="section-title">معلومات التواصل والطلب</h2>
+        <div class="contact-grid">
+            <div class="info-card">
+                <h3>الموقع</h3>
+                <p> موقع 1: شارع الوكلات - مقابل كفراتي</p>
+                <p>موقع 2: دوار العريض - غرب حيقة الملحأ</p>
+                <p>موقع 3: نزلة الطاحون</p>
+                <p>موقع 4: الطريق الواصل من دوار الفقاسة الى كازية الاوكتان</p>
+                <p>موقع 5: طريق الصناعة</p>
+            </div>
+            <div class="info-card">
+                <h3>طريقة الطلب</h3>
+                <p>عبر تطبيقاتنا او من المحل</p>
+            </div>
+            <div class="info-card">
+                <h3>ساعات العمل</h3>
+                <p>24 ساعة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Menu Items -->
+    <div id="latte-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('latte-modal')">&times;</span>
+            <img src="coffee.jpg" alt="لاتيه">
+            <h2>مهيتو</h2>
+            <p><strong>المحتويات:</strong> كذا وكذا </p>
+            <p class="price"> السعر: $$ ليرة سوري جديد </p>
+        </div>
+    </div>
+
+    <div id="smoothie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('smoothie-modal')">&times;</span>
+            <img src="smoothie.jpg" alt="سموذي فراولة">
+            <h2> قهوة </h2>
+            <p><strong>المحتويات:</strong> كذا وكذا </p>
+            <p class="price">السعر: $$ ليرة سوري جديد </p>
+        </div>
+    </div>
+
+    <div id="tea-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('tea-modal')">&times;</span>
+            <img src="tea.jpg" alt="شاي أعشاب">
+            <h2> ميلك شيك  </h2>
+            <p><strong>المحتويات:</strong> مزيج من النعناع، البابونج، والميرمية.</p>
+            <p class="price">السعر: $$ ليرة سوري جديد </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 كافيه عمفرق دارينا. جميع الحقوق محفوظة.</p>
+        <p>&copy; Made by: Mohammed Hazzouri<br> 0996256896 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
