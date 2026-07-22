@@ -61,6 +61,7 @@ header .container {
 
 nav ul {
     display: flex;
+    text-align: center;
     list-style: none;
 }
 
